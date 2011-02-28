@@ -1,7 +1,9 @@
-#SCRIPTS
+#scripts aliases
 alias t='python2 ~/.scripts/t.py --task-dir ~/.tasks --list tasks'
+alias tw='python2 ~/.scripts/t.py --task-dir ~/.tasks --list work'
 alias tmov='python2 ~/.scripts/t.py --task-dir ~/.tasks --list movies'
 alias tmus='python2 ~/.scripts/t.py --task-dir ~/.tasks --list music'
+alias log='python2 ~/.scripts/l.py -d ~/.logs/ -l work'
 
 alias ls='ls -CF --color=auto'
 alias ll='ls -alh --group-directories-first'
