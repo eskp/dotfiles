@@ -1,3 +1,8 @@
+#SCRIPTS
+alias t='python2 ~/.scripts/t.py --task-dir ~/.tasks --list tasks'
+alias tmov='python2 ~/.scripts/t.py --task-dir ~/.tasks --list movies'
+alias tmus='python2 ~/.scripts/t.py --task-dir ~/.tasks --list music'
+
 alias ls='ls -CF --color=auto'
 alias ll='ls -alh --group-directories-first'
 alias la='ls -A --group-directories-first'

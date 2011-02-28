@@ -26,7 +26,7 @@ set list listchars=tab:>_,trail:_,extends:>
 hi Comment      cterm=none      ctermfg=darkgreen
 hi Search       cterm=none      ctermfg=black ctermbg=white
 hi StatusLine   cterm=none      ctermfg=grey ctermbg=none
-hi SpecialKey   cterm=none      ctermfg=grey  ctermbg=none
+hi SpecialKey   cterm=none      ctermfg=darkgreen ctermbg=none
 
 set statusline=%F%m%r%h%w%=\ [format=%{&ff}]\ [type=%Y]\ [ascii=\%03.3b]\ [hex=\%02.2B]\ [pos=%04l,%04v]\ [%p%%]\ [len=%L]
 set laststatus=2
