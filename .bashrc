@@ -10,7 +10,7 @@ if [ -f $HOME/.dircolors ]; then
 fi
 
 export PATH=$PATH:$HOME/.scripts:/usr/local/bin
-export PS1='\n[\u@\h:\w]\\$ '
+export PS1='\n[\u@\h:\w]\$ '
 export EDITOR=/usr/bin/vim
 export HISTFILESIZE=1000000000
 export HISTSIZE=1000000

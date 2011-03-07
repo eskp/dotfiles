@@ -4,6 +4,7 @@ alias tw='python2 ~/.scripts/t.py --task-dir ~/Dropbox/.tasks --list work'
 alias tmov='python2 ~/.scripts/t.py --task-dir ~/Dropbox/.tasks --list movies'
 alias tmus='python2 ~/.scripts/t.py --task-dir ~/Dropbox/.tasks --list music'
 alias log='python2 ~/.scripts/l.py -d ~/Dropbox/.logs/ -l work'
+alias post='python2 ~/.scripts/p.py -d ~/site/eskp/entries/'
 
 alias ls='ls -CF --color=auto'
 alias ll='ls -alh --group-directories-first'
