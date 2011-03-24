@@ -1,10 +1,9 @@
-#scripts aliases
-alias t='python2 ~/.scripts/t.py --task-dir ~/Dropbox/tasks --list tasks'
-alias tw='python2 ~/.scripts/t.py --task-dir ~/Dropbox/tasks --list work'
-alias tmov='python2 ~/.scripts/t.py --task-dir ~/Dropbox/tasks --list movies'
-alias tmus='python2 ~/.scripts/t.py --task-dir ~/Dropbox/tasks --list music'
-alias log='python2 ~/.scripts/l.py -d ~/Dropbox/logs/ -l work'
-alias post='python2 ~/.scripts/p.py -d ~/site/eskp/entries/'
+alias t='task li project:home'
+alias tw='task li project:work'
+alias tmov='task ls project:movies'
+alias tmus='task ls project:music'
+alias log='python2 ~/.scripts/log.py -d ~/Dropbox/logs/ -l work'
+alias post='python2 ~/.scripts/post.py -d ~/site/eskp/entries/'
 
 alias ls='ls -CF --color=auto'
 alias ll='ls -alh --group-directories-first'
