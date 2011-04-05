@@ -1,13 +1,6 @@
 #alias for editing aliases
 alias va='vim ~/.bash_aliases; source ~/.bash_aliases && echo ":: aliases sourced"'
 
-alias t='task li project:home'
-alias tw='task li project:work'
-alias tmov='task ls project:movies'
-alias tmus='task ls project:music'
-alias log='python2 ~/.scripts/log.py -d ~/Dropbox/logs/ -l work'
-alias post='python2 ~/.scripts/post.py -d ~/site/eskp/entries/'
-
 alias ls='ls -CF --color=auto'
 alias ll='ls -alh --group-directories-first'
 alias la='ls -A --group-directories-first'
@@ -47,3 +40,15 @@ alias topcpu="ps auxf | sort -nr -k 3 | head -10"
 alias S="sudo pacman -Ss"
 alias I="sudo pacman -Sy"
 alias U="sudo pacman -Syu"
+
+alias t='task'
+alias th='task project:home'
+alias tw='task project:work'
+alias tmus='task project:music'
+alias tmov='task project:movies'
+alias tv='task project:tv'
+alias log='python2 ~/.scripts/log.py -d ~/Dropbox/logs/ -l work'
+alias post='python2 ~/.scripts/post.py -d ~/site/eskp/entries/'
+
+# awk arithmetic
+function calc() { awk "BEGIN{ print $* }" ;}
