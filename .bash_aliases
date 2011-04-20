@@ -51,4 +51,4 @@ alias log='python2 ~/.scripts/log.py -d ~/Dropbox/logs/ -l work'
 alias post='python2 ~/.scripts/post.py -d ~/site/eskp/entries/'
 
 # awk arithmetic
-function calc() { awk "BEGIN{ print $* }" ;}
+function c() { awk "BEGIN{ print $* }" ;}
