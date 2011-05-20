@@ -4,7 +4,7 @@ alias va='vim ~/.bash_aliases; source ~/.bash_aliases && echo ":: aliases source
 alias ls='ls -CF --color=auto'
 alias ll='ls -alh --group-directories-first'
 alias la='ls -A --group-directories-first'
-alias cr='rsync -P'
+alias cr='rsync -aPh'
 alias v='vim'
 
 alias p='pushd'
