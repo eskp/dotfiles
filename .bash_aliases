@@ -6,6 +6,8 @@ alias ll='ls -alh --group-directories-first'
 alias la='ls -A --group-directories-first'
 alias cr='rsync -aPh'
 alias v='vim'
+#vim's less macro
+alias less='/usr/share/vim/vim73/macros/less.sh'
 
 alias p='pushd'
 alias o='popd'
