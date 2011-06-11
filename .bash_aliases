@@ -4,10 +4,9 @@ alias va='vim ~/.bash_aliases; source ~/.bash_aliases && echo ":: aliases source
 alias ls='ls -CF --color=auto'
 alias ll='ls -alh --group-directories-first'
 alias la='ls -A --group-directories-first'
-alias cr='rsync -aPh'
+alias cr='rsync -rPh'
 alias v='vim'
 
-alias p='pushd'
 alias o='popd'
 alias 1="pushd"
 alias 2="pushd +2"
@@ -35,11 +34,17 @@ alias tmus='task project:music'
 alias tmov='task project:movies'
 alias tv='task project:tv'
 alias log='python2 ~/.scripts/log.py -d ~/Dropbox/logs/ -l work'
-alias post='python2 ~/.scripts/post.py -d ~/site/eskp/entries/'
+alias post='python2 ~/.scripts/post.py -e ~/git/eskp/entries/ -r ~/git/eskp/'
 
 # awk arithmetic
 function c() { awk "BEGIN{ print $* }" ;}
 
+# push directory and list
+function p() {
+        pushd "$#"
+        status=$?
+        [ $status -eq 0 ] && ls || (exit 1)
+}
 # change directory and list
 function cd() {
         if [ "$#" == 0 ]; then
