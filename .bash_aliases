@@ -43,7 +43,7 @@ function c() { awk "BEGIN{ print $* }" ;}
 
 # push directory and list
 function p() {
-        pushd "$#"
+        pushd "$1"
         status=$?
         [ $status -eq 0 ] && ls || (exit 1)
 }
