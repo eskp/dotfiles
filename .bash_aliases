@@ -36,8 +36,8 @@ alias tw='task project:work'
 alias tmus='task project:music'
 alias tmov='task project:movies'
 alias tv='task project:tv'
-alias log='python2 ~/.scripts/log.py -d ~/Dropbox/logs/ -l work'
-alias post='python2 ~/.scripts/post.py -d ~/site/eskp/entries/'
+alias log='python2 ~/scripts/log.py -d ~/Dropbox/logs/ -l work'
+alias post='python2 ~/scripts/post.py -d ~/site/eskp/entries/'
 
 # awk arithmetic
 function c() { awk "BEGIN{ print $* }" ;}
