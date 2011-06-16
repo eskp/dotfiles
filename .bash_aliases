@@ -39,6 +39,9 @@ alias tv='task project:tv'
 alias log='python2 ~/scripts/log.py -d ~/Dropbox/logs/ -l work'
 alias post='python2 ~/scripts/post.py -d ~/site/eskp/entries/'
 
+# got to new directory
+md () { mkdir -p "$1" && cd "$1"; }
+
 # awk arithmetic
 function c() { awk "BEGIN{ print $* }" ;}
 
