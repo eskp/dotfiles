@@ -1,7 +1,7 @@
 #alias for editing aliases
 alias va='vim ~/.bash_aliases; source ~/.bash_aliases && echo ":: aliases sourced"'
 
-alias ls='ls -CF --color=auto'
+alias ls='ls -CF --color=auto --group-directories-first'
 alias ll='ls -alh --group-directories-first'
 alias la='ls -A --group-directories-first'
 alias cr='rsync -rPh'
@@ -36,8 +36,8 @@ alias tw='task project:work'
 alias tmus='task project:music'
 alias tmov='task project:movies'
 alias tv='task project:tv'
-alias log='python2 ~/scripts/log.py -d ~/Dropbox/logs/ -l work'
-alias post='python2 ~/scripts/post.py -d ~/site/eskp/entries/'
+alias log='python2 ~/.scripts/log.py -d ~/Dropbox/logs/ -l work'
+alias post='python2 ~/.scripts/post.py -d ~/site/eskp/entries/'
 
 # got to new directory
 md () { mkdir -p "$1" && cd "$1"; }
