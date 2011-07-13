@@ -35,11 +35,13 @@ alias tw='task project:work'
 alias tmus='task project:music'
 alias tmov='task project:movies'
 alias tv='task project:tv'
-alias log='python2 ~/.scripts/log.py -d ~/Dropbox/logs/ -l work'
+
+# SCRIPTS
+alias log='python2 ~/.scripts/log.py -d ~/sync/log/ -l work'
 alias post='python2 ~/.scripts/post.py -e ~/git/eskp/entries/ -r ~/git/eskp/'
 
 # got to new directory
-md () { mkdir -p "$1" && cd "$1"; }
+function md() { mkdir -p "$1" && cd "$1"; }
 
 # awk arithmetic
 function c() { awk "BEGIN{ print $* }" ;}
