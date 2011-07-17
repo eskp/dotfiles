@@ -5,7 +5,6 @@ alias ls='ls -CF --color=auto --group-directories-first'
 alias ll='ls -alh --group-directories-first'
 alias la='ls -A --group-directories-first'
 alias cr='rsync -rPh'
-alias v='vim'
 #vim's less macro
 alias less='/usr/share/vim/vim73/macros/less.sh'
 
@@ -35,7 +34,7 @@ alias tw='task project:work'
 alias tmus='task project:music'
 alias tmov='task project:movies'
 alias tv='task project:tv'
-alias log='python2 ~/.scripts/log.py -d ~/Dropbox/logs/ -l work'
+alias log='python2 ~/.scripts/log.py -d ~/sync/log/ -l work'
 alias post='python2 ~/.scripts/post.py -e ~/git/eskp/entries/ -r ~/git/eskp/'
 
 # got to new directory
