@@ -20,4 +20,4 @@ export HISTCONTROL=ignoreboth
 shopt -s histappend
 PROMPT_COMMAND='history -a'
 
-eval `keychain -q --eval --agents ssh $HOME/.ssh/id_rsa`
+eval `keychain -q --eval --nocolor --agents ssh $HOME/.ssh/id_rsa`
