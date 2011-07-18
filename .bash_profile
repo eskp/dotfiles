@@ -3,6 +3,6 @@ if [ -f $HOME/.bashrc ]; then
 fi
 
 if [[ -z $DISPLAY && $(tty) = /dev/tty1 ]]; then
-    xinit 2>&1 ~/.log/xinit.log
+    xinit > ~/.log/xinit.log 2>&1
     logout
 fi
