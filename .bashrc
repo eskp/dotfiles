@@ -19,3 +19,5 @@ export HISTCONTROL=ignoreboth
 #share history between terminal sessions
 shopt -s histappend
 PROMPT_COMMAND='history -a'
+
+eval `keychain -q --eval --nocolor --agents ssh $HOME/.ssh/id_rsa`

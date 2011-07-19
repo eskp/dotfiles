@@ -5,7 +5,6 @@ alias ls='ls -CF --color=auto --group-directories-first'
 alias ll='ls -alh --group-directories-first'
 alias la='ls -A --group-directories-first'
 alias cr='rsync -rPh'
-alias v='vim'
 #vim's less macro
 alias less='/usr/share/vim/vim73/macros/less.sh'
 
