@@ -1,6 +1,12 @@
 syntax on
-
+filetype on
 filetype plugin indent on
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
+"code folding
+set foldmethod=indent
+set foldlevel=99
 
 set expandtab
 set smarttab
@@ -8,13 +14,12 @@ set shiftwidth=4
 set tabstop=4
 set nowrap
 set autoindent
-"set nu
+"set nu		"line numbering
 set showmode
 set showmatch
 set ignorecase
 set smartcase
 set nohlsearch
-"set incsearch
 set nobackup
 set noswapfile
 
@@ -31,8 +36,8 @@ hi SpecialKey   cterm=none      ctermfg=darkgreen ctermbg=none
 set statusline=%F%m%r%h%w%=\ [format=%{&ff}]\ [type=%Y]\ [ascii=\%03.3b]\ [hex=\%02.2B]\ [pos=%04l,%04v]\ [%p%%]\ [len=%L]
 set laststatus=2
 
-"re-source .vimrc
-map <F5> :source $HOME/.vimrc<CR>
+"style guide checker
+let g:pep8_map='<leader>8'
 
 function! ToggleSyntax()
    if exists("g:syntax_on")
