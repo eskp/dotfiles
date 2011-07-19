@@ -1,8 +1,17 @@
 syntax on
-filetype on
-filetype plugin indent on
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+
+set nocompatible
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+"github bundles:
+Bundle 'sontek/minibufexpl.vim'
+Bundle 'msanders/snipmate.vim'
+"vim-scripts repo
+Bundle 'pep8'
+
+filetype off                    "required for vundle
+filetype plugin indent on       "required for vundle
 
 "code folding
 set foldmethod=indent
