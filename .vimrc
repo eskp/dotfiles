@@ -1,7 +1,7 @@
 syntax on
 
 set nocompatible
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/vundle/
 call vundle#rc()
 
 "github bundles:
