@@ -1,0 +1,9 @@
+[submodule ".vim/bundle/minibufexpl"]
+	path = .vim/bundle/minibufexpl
+	url = https://github.com/sontek/minibufexpl.vim.git
+[submodule ".vim/bundle/pep8"]
+	path = .vim/bundle/pep8
+	url = https://github.com/vim-scripts/pep8.git
+[submodule ".vim/bundle/snipmate"]
+	path = .vim/bundle/snipmate
+	url = https://github.com/msanders/snipmate.vim.git
