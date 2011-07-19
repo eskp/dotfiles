@@ -38,7 +38,7 @@ alias tv='task project:tv'
 
 # SCRIPTS
 alias log='python2 ~/.scripts/log.py -d ~/sync/log/ -l work'
-alias post='python2 ~/.scripts/post.py -e ~/git/eskp/entries/ -r ~/git/eskp/'
+alias post='python2 ~/.scripts/post.py -r ~/git/eskp/ -e entries/'
 
 # got to new directory
 function md() { mkdir -p "$1" && cd "$1"; }
