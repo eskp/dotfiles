@@ -1,7 +1,15 @@
+! ----------------------------------------------------------------------------
+!  file:     ~/.Xresources
+!  author:   eskp - http://eskp.net
+!  modified: July 2010
+!  vim:ai:si:et:ts=4:sw=4:ft=xdefaults:
+! ----------------------------------------------------------------------------
+
 *.buffered:     true
 *.cursorColor:  green
 *.scrollBar:    false
-*.font:     -*-terminus-medium-r-*-*-14-*-*-*-*-*-*-*
+!*.font:     xft:DejaVu Sans Mono:size=10
+*.font:     xft:Terminus:size=12
 
 ! open URLs in firefox
 *.perl-ext-common:  default,matcher
@@ -9,8 +17,8 @@
 *.matcher.button:   1
 
 ! Colours
-*background: #1e1e1e
-*foreground: #c6c6c6
+*background: #383838
+*foreground: #cccccc
 ! Black (not tango) + DarkGrey
 *color0:  #000000
 *color8:  #555753
@@ -24,7 +32,7 @@
 *color3:  #eab93d
 *color11: #ffc123
 ! DarkBlue + Blue
-*color4:  #204a87
+*color4:  #2C6FB7
 *color12: #3465a4
 ! DarkMangenta + Mangenta
 *color5:  #ce5c00
@@ -36,3 +44,7 @@
 *color7:  #cccccc
 *color15: #ffffff
 
+! Xcursor --------------------------------------------------------------------
+!
+Xcursor.theme: Vanilla-DMZ-AA
+Xcursor.size:  22
