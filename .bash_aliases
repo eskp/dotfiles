@@ -8,6 +8,8 @@ alias cr='rsync -rPh'
 #vim's less macro
 alias less='/usr/share/vim/vim73/macros/less.sh'
 
+alias words="shuf -n3 /usr/share/dict/cracklib-small | tr -d '\n'"
+
 alias o='popd'
 alias 1="pushd"
 alias 2="pushd +2"
