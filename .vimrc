@@ -7,6 +7,7 @@ call vundle#rc()
 "github bundles:
 Bundle 'sontek/minibufexpl.vim'
 Bundle 'msanders/snipmate.vim'
+Bundle 'tpope/vim-fugitive'
 "vim-scripts repo
 Bundle 'pep8'
 
@@ -17,7 +18,7 @@ filetype plugin indent on       "required for vundle
 set foldmethod=indent
 set foldlevel=99
 
-set expandtab
+"set expandtab
 set smarttab
 set shiftwidth=4
 set tabstop=4
@@ -34,13 +35,17 @@ set noswapfile
 
 "allow backspace over everything in insert mode
 set backspace=indent,eol,start
+"
+"
+"show invisibles
+"toggle between showing and hiding invisible chars
+nmap <leader>l :set list!<CR>
+"customize the symbols used for invisible chars
+set list listchars=tab:▸\ ,trail:_,eol:¬
 
-set list listchars=tab:>_,trail:_,extends:>
 
-"hi Comment      cterm=none      ctermfg=darkgreen
-"hi SpecialKey   cterm=none      ctermfg=darkgreen ctermbg=none
-hi Search       cterm=none      ctermfg=black ctermbg=white
-hi StatusLine   cterm=none      ctermfg=grey ctermbg=none
+hi Search cterm=none ctermfg=black ctermbg=white
+hi StatusLine cterm=none ctermfg=grey ctermbg=none
 
 set statusline=%F%m%r%h%w%=\ [format=%{&ff}]\ [type=%Y]\ [ascii=\%03.3b]\ [hex=\%02.2B]\ [pos=%04l,%04v]\ [%p%%]\ [len=%L]
 set laststatus=2
