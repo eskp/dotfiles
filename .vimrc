@@ -18,7 +18,7 @@ filetype plugin indent on       "required for vundle
 set foldmethod=indent
 set foldlevel=99
 
-"set expandtab
+set expandtab
 set smarttab
 set shiftwidth=4
 set tabstop=4
@@ -41,7 +41,7 @@ set backspace=indent,eol,start
 "toggle between showing and hiding invisible chars
 nmap <leader>l :set list!<CR>
 "customize the symbols used for invisible chars
-set list listchars=tab:▸\ ,trail:_,eol:¬
+set listchars=tab:▸\ ,trail:_,eol:¬
 
 
 hi Search cterm=none ctermfg=black ctermbg=white

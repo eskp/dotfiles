@@ -5,13 +5,14 @@ if [ -f $HOME/.bash_aliases ]; then
     . $HOME/.bash_aliases
 fi
 
-export PATH=$PATH:$HOME/scripts:/usr/local/bin
+export PATH=$PATH:$HOME/.scripts:/usr/local/bin
 export CDPATH=.:~:/mnt:/etc:/var/log
 export PS1='\n[\u@\h:\w]\$ '
 export EDITOR=/usr/bin/vim
 export HISTFILESIZE=1000000000
 export HISTSIZE=1000000
 export HISTCONTROL=ignoreboth
+export TODOTXT_DEFAULT_ACTION=ls
 
 #share history between terminal sessions
 shopt -s histappend

@@ -30,18 +30,18 @@ alias S="sudo pacman -Ss"
 alias I="sudo pacman -Sy"
 alias U="sudo pacman -Syu"
 
-alias t='task'
-alias th='task project:home'
-alias tw='task project:work'
-alias tmus='task project:music'
-alias tmov='task project:movies'
-alias tv='task project:tv'
+alias t='todo.sh -+ -@'
+alias th="t ls home"
+alias tw='t ls work'
+alias tmus='t ls music'
+alias tmov='t ls movies'
+alias tv='t ls tv'
 
 # SCRIPTS
 alias log='python2 ~/.scripts/log.py -d ~/sync/log/ -l work'
 alias post='python2 ~/.scripts/post.py -r ~/git/eskp/ -e entries/'
 
-# got to new directory
+# go to new directory
 function md() { mkdir -p "$1" && cd "$1"; }
 
 # awk arithmetic
