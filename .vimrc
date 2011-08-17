@@ -10,6 +10,7 @@ Bundle 'msanders/snipmate.vim'
 Bundle 'tpope/vim-fugitive'
 "vim-scripts repo
 Bundle 'pep8'
+Bundle 'Puppet-Syntax-Highlighting'
 
 filetype off                    "required for vundle
 filetype plugin indent on       "required for vundle
