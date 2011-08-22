@@ -1,3 +1,5 @@
+set t_Co=256
+colorscheme kellys
 syntax on
 
 set nocompatible
@@ -5,7 +7,7 @@ set rtp+=~/.vim/vundle/
 call vundle#rc()
 
 "github bundles:
-Bundle 'sontek/minibufexpl.vim'
+"Bundle 'sontek/minibufexpl.vim'
 Bundle 'msanders/snipmate.vim'
 Bundle 'tpope/vim-fugitive'
 "vim-scripts repo
@@ -25,7 +27,7 @@ set shiftwidth=4
 set tabstop=4
 set nowrap
 set autoindent
-"set nu		"line numbering
+set number
 set showmode
 set showmatch
 set ignorecase
