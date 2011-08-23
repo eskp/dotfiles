@@ -29,6 +29,7 @@ alias topcpu="ps axo pid,pcpu,pmem,comm --sort=-pcpu| head -20"
 alias S="sudo pacman -Ss"
 alias I="sudo pacman -Sy"
 alias U="sudo pacman -Syu"
+alias Q="sudo pacman -Qi"
 
 alias t='todo.sh -+ -@'
 alias th="t ls home"
