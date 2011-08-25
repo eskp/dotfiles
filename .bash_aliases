@@ -37,10 +37,6 @@ alias tmus='t ls music'
 alias tmov='t ls movies'
 alias tv='t ls tv'
 
-# SCRIPTS
-alias log='python2 ~/.scripts/log.py -d ~/sync/log/ -l work'
-alias post='python2 ~/.scripts/post.py -r ~/git/eskp/ -e entries/'
-
 # go to new directory
 function md() { mkdir -p "$1" && cd "$1"; }
 
