@@ -8,15 +8,11 @@ alias cr='rsync -rPh'
 #vim's less macro
 alias less='/usr/share/vim/vim73/macros/less.sh'
 
-alias words="shuf -n3 /usr/share/dict/cracklib-small | tr -d '\n'"
+alias words="shuf -n3 /usr/share/dict/cracklib-small | tr '\n' ' '"
 
 alias o='popd'
 alias 1="pushd"
 alias 2="pushd +2"
-alias 3="pushd +3"
-alias 4="pushd +4"
-alias 5="pushd +5"
-alias 6="pushd +6"
 
 alias ..='cd ..'
 alias ...='cd ../../'
@@ -34,6 +30,7 @@ alias Q="sudo pacman -Qi"
 alias t='todo.sh -+ -@'
 alias th="t ls home"
 alias tw='t ls work'
+alias tu='t ls uni'
 alias tmus='t ls music'
 alias tmov='t ls movies'
 alias tv='t ls tv'

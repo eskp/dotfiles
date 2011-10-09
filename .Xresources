@@ -1,24 +1,17 @@
-! ----------------------------------------------------------------------------
-!  file:     ~/.Xresources
-!  author:   eskp - http://eskp.net
-!  modified: July 2010
-!  vim:ai:si:et:ts=4:sw=4:ft=xdefaults:
-! ----------------------------------------------------------------------------
-
 !*.buffered:     true
 *.cursorColor:  green
 *.scrollBar:    false
 *.font:         -*-terminus-medium-*-*-*-14-*-*-*-*-*-*-*
 
-! open URLs in firefox
+! open URLs in a browser
 *.perl-ext-common:  default,matcher
-*.urlLauncher:      /usr/bin/firefox
+*.urlLauncher:      /usr/bin/chromium
 *.matcher.button:   1
 
 ! Colours
 *.background: #2d2d2d
 *.foreground: #e5e5e5
-! Black (not tango) + DarkGrey
+! Black
 *.color0:  #000000
 *.color8:  #555753
 ! DarkRed + Red
@@ -36,7 +29,7 @@
 ! DarkMangenta + Mangenta
 *.color5:  #ce5c00
 *.color13: #f57900
-!DarkCyan + Cyan (both not tango)
+!DarkCyan + Cyan
 *.color6:  #89b6e2
 *.color14: #46a4ff
 ! LightGrey + White
