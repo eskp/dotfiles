@@ -9,12 +9,14 @@ export PATH=$PATH:$HOME/.scripts:/usr/local/bin
 export CDPATH=.:~:/mnt:/etc:/var/log
 export PS1='\n[\u@\h:\w]\$ '
 export EDITOR=/usr/bin/vim
-export HISTFILESIZE=1000000000
 export HISTSIZE=1000000
-export HISTCONTROL=ignoreboth
+export HISTFILESIZE=1000000000
+export HISTCONTROL=ignoredups:ignorespace
+
 export TODOTXT_DEFAULT_ACTION=ls
 
 #share history between terminal sessions
+#append to the history file, don't overwrite it
 shopt -s histappend
 PROMPT_COMMAND='history -a'
 # correct minor typos in a cd command
