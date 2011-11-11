@@ -22,7 +22,7 @@ alias topmem="ps axo pid,pcpu,pmem,comm --sort=-rss | head -20"
 #top 10 CPU consuming process
 alias topcpu="ps axo pid,pcpu,pmem,comm --sort=-pcpu| head -20"
 
-alias S="sudo pacman -Ss"
+alias S="pac"
 alias I="sudo pacman -Sy"
 alias U="sudo pacman -Syu"
 alias Q="sudo pacman -Qi"
@@ -57,4 +57,16 @@ function cd() {
                 status=$?
                 [ $status -eq 0 ] && ls || (exit 1)
         fi
+}
+#colour pacman search output
+function pac() {
+        local CL='\\e['
+        local RS='\\e[0;0m'
+
+        echo -e "$(pacman -Ss "$@" | sed "
+            /^core/     s,.*,${CL}1;31m&${RS},
+            /^extra/    s,.*,${CL}0;32m&${RS},
+            /^community/    s,.*,${CL}0;34m&${RS},
+            /^[^[:space:]]/ s,.*,${CL}0;36m&${RS},
+        ")"
 }

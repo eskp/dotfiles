@@ -4,9 +4,10 @@
 *.font:         -*-terminus-medium-*-*-*-14-*-*-*-*-*-*-*
 
 ! open URLs in a browser
-*.perl-ext-common:  default,matcher
-*.urlLauncher:      /usr/bin/chromium
-*.matcher.button:   1
+URxvt.perl-ext-common:  default,url-select
+URxvt.keysym.M-u:       perl:url-select:select_next
+URxvt.urlLauncher:      /usr/bin/chromium
+URxvt.underlineURLs:    true
 
 ! Colours
 *.background: #2d2d2d
