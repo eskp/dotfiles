@@ -6,7 +6,7 @@ if [ -f $HOME/.bash_aliases ]; then
 fi
 
 export PATH=$PATH:$HOME/.scripts:/usr/local/bin
-export CDPATH=.:~:/mnt:/etc:/var/log
+export CDPATH=.:~:/mnt:/etc:/var/log:/etc/puppet
 export PS1='\n[\u@\h:\w]\$ '
 export EDITOR=/usr/bin/vim
 export HISTSIZE=1000000
