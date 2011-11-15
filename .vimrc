@@ -37,7 +37,7 @@ set noswapfile
 set foldmethod=indent
 set foldlevel=99
 "formatting
-set textwidth=80
+"set textwidth=80
 set nowrap
 "typing behavior
 set backspace=indent,eol,start
