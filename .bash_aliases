@@ -35,6 +35,8 @@ alias tmus='t ls music'
 alias tmov='t ls movies'
 alias tv='t ls tv'
 
+alias log="$HOME/.scripts/log.py -f $HOME/sync/log/work"
+
 # go to new directory
 function md() { mkdir -p "$1" && cd "$1"; }
 

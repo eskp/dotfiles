@@ -5,9 +5,9 @@ if [ -f $HOME/.bash_aliases ]; then
     . $HOME/.bash_aliases
 fi
 
-export PATH=$PATH:$HOME/.scripts:/usr/local/bin
+export PATH=$PATH:$HOME/.scripts:/usr/local/bin:$HOME/down/android-sdk-linux/tools:$HOME/git/phonegap-android/bin
 export CDPATH=.:~:/mnt:/etc:/var/log:/etc/puppet
-export PS1='\n[\u@\h:\w]\$ '
+export PS1='\n\u@\h:\[\e[0;32m\]\w\[\e[m\] \$ '
 export EDITOR=/usr/bin/vim
 export HISTSIZE=1000000
 export HISTFILESIZE=1000000000
