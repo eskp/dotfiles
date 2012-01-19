@@ -30,7 +30,6 @@ alias Q="sudo pacman -Qi"
 alias t='todo.sh -+ -@'
 alias th="t ls home"
 alias tw='t ls work'
-alias tu='t ls uni'
 alias tmus='t ls music'
 alias tmov='t ls movies'
 alias tv='t ls tv'
