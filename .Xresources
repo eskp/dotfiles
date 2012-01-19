@@ -5,8 +5,9 @@
 ! open URLs in a browser
 URxvt.perl-ext-common:  default,url-select
 URxvt.keysym.M-u:       perl:url-select:select_next
-URxvt.urlLauncher:      chromium
+URxvt.urlLauncher:      /usr/bin/chromium
 URxvt.underlineURLs:    true
+!
 ! Colours
 *.background: #2d2d2d
 *.foreground: #e5e5e5
