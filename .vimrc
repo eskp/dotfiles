@@ -59,8 +59,8 @@ set statusline=%F%m%r%h%w%=\ [format=%{&ff}]\ [type=%Y]\ [ascii=\%03.3b]\ [hex=\
 set laststatus=2
 
 " turn off auto adding comments on next line
-set fo=tcq
-set modeline
+"set fo=tcq
+"set modeline
 
 hi Search cterm=none ctermfg=black ctermbg=white
 hi StatusLine cterm=none ctermfg=grey ctermbg=none
