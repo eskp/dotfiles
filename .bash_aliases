@@ -34,7 +34,7 @@ alias tmus='t ls music'
 alias tmov='t ls movies'
 alias tv='t ls tv'
 
-alias log="$HOME/.scripts/log.py -f $HOME/sync/log/work"
+alias log="$HOME/git/eskp.net/log.py -d $HOME/git/eskp.net/log/logs"
 
 # go to new directory
 function md() { mkdir -p "$1" && cd "$1"; }
