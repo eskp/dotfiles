@@ -27,14 +27,14 @@ alias I="sudo pacman -Sy"
 alias U="sudo pacman -Syu"
 alias Q="sudo pacman -Qi"
 
-alias t='todo.sh -+ -@'
-alias th="t ls home"
-alias tw='t ls work'
-alias tmus='t ls music'
-alias tmov='t ls movies'
-alias tv='t ls tv'
+alias t='clear && todo.sh -+ -@'
+alias th="clear && t ls +home"
+alias tw='clear && t ls +work'
+alias tmus='clear && t ls +music'
+alias tmov='clear && t ls +movies'
+alias tv='clear && t ls +tv'
 
-alias log="$HOME/git/eskp.net/log.py -d $HOME/git/eskp.net/log/logs"
+alias log="$HOME/git/eskp.net/log.py $HOME/git/eskp.net/log/logs"
 
 # go to new directory
 function md() { mkdir -p "$1" && cd "$1"; }

@@ -5,7 +5,7 @@ if [ -f $HOME/.bash_aliases ]; then
     . $HOME/.bash_aliases
 fi
 
-export PATH=$PATH:$HOME/.scripts:/usr/local/bin
+export PATH=$PATH:$HOME/.gem/ruby/1.9.1/bin:$HOME/.scripts:/usr/local/bin
 export CDPATH=.:~:/mnt:/etc:/var/log:~/git:~/git/sysadmin
 export PS1='\n\u@\h:\[\e[0;32m\]\w\[\e[m\] \$ '
 export EDITOR=/usr/bin/vim
@@ -29,3 +29,12 @@ set -o vi
 bind -m vi-insert "\C-l":clear-screen
 
 eval `keychain -q --eval --nocolor --agents ssh $HOME/.ssh/id_rsa`
+
+#colored man pages
+export LESS_TERMCAP_mb=$(printf '\e[01;31m') # enter blinking mode - red
+export LESS_TERMCAP_md=$(printf '\e[01;35m') # enter double-bright mode - bold, magenta
+export LESS_TERMCAP_me=$(printf '\e[0m') # turn off all appearance modes (mb, md, so, us)
+export LESS_TERMCAP_se=$(printf '\e[0m') # leave standout mode
+export LESS_TERMCAP_so=$(printf '\e[01;33m') # enter standout mode - yellow
+export LESS_TERMCAP_ue=$(printf '\e[0m') # leave underline mode
+export LESS_TERMCAP_us=$(printf '\e[04;36m') # enter underline mode - cyan
