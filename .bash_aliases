@@ -36,6 +36,10 @@ alias tv='clear && t ls +tv'
 
 alias log="$HOME/git/eskp.net/log.py $HOME/git/eskp.net/log/logs"
 
+alias mirror="xrandr --auto --output VGA1 --mode 1360x768 --output LVDS1 --mode 1280x800"
+alias vgaoff="xrandr --output LVDS1 --mode 1280x800 --output VGA1 --off"
+alias rightof="xrandr --noprimary --output VGA1 --mode 1360x768 --right-of LVDS1"
+
 # go to new directory
 function md() { mkdir -p "$1" && cd "$1"; }
 
