@@ -63,7 +63,7 @@ function cd() {
                 [ $status -eq 0 ] && ls || (exit 1)
         fi
 }
-#colour pacman search output
+# colour pacman search output
 function pac() {
         local CL='\\e['
         local RS='\\e[0;0m'
@@ -75,3 +75,5 @@ function pac() {
             /^[^[:space:]]/ s,.*,${CL}0;36m&${RS},
         ")"
 }
+# go up directories
+up() { local x='';for i in $(seq ${1:-1});do x="$x../"; done;cd $x; }
