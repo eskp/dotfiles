@@ -14,9 +14,6 @@ alias o='popd'
 alias 1="pushd"
 alias 2="pushd +2"
 
-alias ..='cd ..'
-alias ...='cd ../../'
-
 #top 10 memory consuming process
 alias topmem="ps axo pid,pcpu,pmem,comm --sort=-rss | head -20"
 #top 10 CPU consuming process
