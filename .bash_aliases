@@ -24,14 +24,7 @@ alias I="sudo pacman -Sy"
 alias U="sudo pacman -Syu"
 alias Q="sudo pacman -Qi"
 
-alias t='clear && todo.sh -+ -@'
-alias th="clear && t ls +home"
-alias tw='clear && t ls +work'
-alias tmus='clear && t ls +music'
-alias tmov='clear && t ls +movies'
-alias tv='clear && t ls +tv'
-
-alias log="$HOME/git/eskp.net/log.py $HOME/git/eskp.net/log/logs"
+alias log="$HOME/git/eskp.net/log.py $HOME/git/eskp.net/public/log.eskp.net/logs"
 
 alias mirror="xrandr --auto --output VGA1 --mode 1360x768 --output LVDS1 --mode 1280x800"
 alias vgaoff="xrandr --output LVDS1 --mode 1280x800 --output VGA1 --off"
