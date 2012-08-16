@@ -1,6 +1,0 @@
-Install
-
-cd ~
-git init 
-git remote add origin git@github.com:eskp/dotfiles.git
-git pull origin master
