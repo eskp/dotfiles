@@ -12,6 +12,8 @@ export EDITOR=/usr/bin/vim
 export HISTSIZE=1000000
 export HISTFILESIZE=1000000000
 export HISTCONTROL=ignoredups:ignorespace
+export GREP_OPTIONS='--color=auto'
+export GREP_COLOR='1;32'
 
 export TODOTXT_DEFAULT_ACTION=ls
 
@@ -29,6 +31,7 @@ set -o vi
 bind -m vi-insert "\C-l":clear-screen
 
 eval `keychain -q --eval --nocolor --agents ssh $HOME/.ssh/id_rsa`
+eval `keychain -q --eval --nocolor --agents ssh $HOME/.ssh/id_eskpnet`
 
 #colored man pages
 export LESS_TERMCAP_mb=$(printf '\e[01;31m') # enter blinking mode - red

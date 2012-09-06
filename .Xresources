@@ -3,10 +3,12 @@
 *.scrollBar:    false
 *.font:         -*-terminus-medium-*-*-*-14-*-*-*-*-*-*-*
 ! open URLs in a browser
-URxvt.perl-ext-common:  default,url-select
-URxvt.keysym.M-u:       perl:url-select:select_next
-URxvt.urlLauncher:      /usr/bin/chromium
-URxvt.underlineURLs:    true
+URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
+URxvt.url-select.launcher: chromium
+URxvt.url-select.underline: true
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
 !
 ! Colours
 *.background: #2d2d2d
