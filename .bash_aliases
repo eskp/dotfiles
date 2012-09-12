@@ -39,6 +39,7 @@ alias log="$HOME/git/eskp.net/log.py $HOME/git/eskp.net/log/logs"
 alias mirror="xrandr --auto --output VGA1 --mode 1360x768 --output LVDS1 --mode 1280x800"
 alias vgaoff="xrandr --output LVDS1 --mode 1280x800 --output VGA1 --off"
 alias rightof="xrandr --noprimary --output VGA1 --mode 1360x768 --right-of LVDS1"
+alias leftof="xrandr --noprimary --output VGA1 --mode 1360x768 --left-of LVDS1"
 
 # go to new directory
 function md() { mkdir -p "$1" && cd "$1"; }
@@ -75,3 +76,4 @@ function pac() {
             /^[^[:space:]]/ s,.*,${CL}0;36m&${RS},
         ")"
 }
+function up() { local x='';for i in $(seq ${1:-1});do x="$x../"; done;cd $x; }
