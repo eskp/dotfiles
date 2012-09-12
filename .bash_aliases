@@ -14,9 +14,6 @@ alias o='popd'
 alias 1="pushd"
 alias 2="pushd +2"
 
-alias ..='cd ..'
-alias ...='cd ../../'
-
 #top 10 memory consuming process
 alias topmem="ps axo pid,pcpu,pmem,comm --sort=-rss | head -20"
 #top 10 CPU consuming process
@@ -27,14 +24,7 @@ alias I="sudo pacman -Sy"
 alias U="sudo pacman -Syu"
 alias Q="sudo pacman -Qi"
 
-alias t='clear && todo.sh -+ -@'
-alias th="clear && t ls +home"
-alias tw='clear && t ls +work'
-alias tmus='clear && t ls +music'
-alias tmov='clear && t ls +movies'
-alias tv='clear && t ls +tv'
-
-alias log="$HOME/git/eskp.net/log.py $HOME/git/eskp.net/log/logs"
+alias log="$HOME/git/eskp.net/log.py $HOME/git/eskp.net/public/log.eskp.net/logs"
 
 alias mirror="xrandr --auto --output VGA1 --mode 1360x768 --output LVDS1 --mode 1280x800"
 alias vgaoff="xrandr --output LVDS1 --mode 1280x800 --output VGA1 --off"
@@ -64,7 +54,7 @@ function cd() {
                 [ $status -eq 0 ] && ls || (exit 1)
         fi
 }
-#colour pacman search output
+# colour pacman search output
 function pac() {
         local CL='\\e['
         local RS='\\e[0;0m'
@@ -76,4 +66,5 @@ function pac() {
             /^[^[:space:]]/ s,.*,${CL}0;36m&${RS},
         ")"
 }
+# go up directories
 function up() { local x='';for i in $(seq ${1:-1});do x="$x../"; done;cd $x; }
