@@ -29,6 +29,7 @@ alias log="$HOME/git/eskp.net/log.py $HOME/git/eskp.net/public/log.eskp.net/logs
 alias mirror="xrandr --auto --output VGA1 --mode 1360x768 --output LVDS1 --mode 1280x800"
 alias vgaoff="xrandr --output LVDS1 --mode 1280x800 --output VGA1 --off"
 alias rightof="xrandr --noprimary --output VGA1 --mode 1360x768 --right-of LVDS1"
+alias leftof="xrandr --noprimary --output VGA1 --mode 1360x768 --left-of LVDS1"
 
 alias passw="PASSWORD_STORE_DIR=$HOME/.pwd_stores/ie pass"
 
@@ -68,4 +69,4 @@ function pac() {
         ")"
 }
 # go up directories
-up() { local x='';for i in $(seq ${1:-1});do x="$x../"; done;cd $x; }
+function up() { local x='';for i in $(seq ${1:-1});do x="$x../"; done;cd $x; }
