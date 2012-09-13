@@ -31,7 +31,7 @@ alias vgaoff="xrandr --output LVDS1 --mode 1280x800 --output VGA1 --off"
 alias rightof="xrandr --noprimary --output VGA1 --mode 1360x768 --right-of LVDS1"
 alias leftof="xrandr --noprimary --output VGA1 --mode 1360x768 --left-of LVDS1"
 
-alias passw="PASSWORD_STORE_DIR=$HOME/.pwd_stores/ie pass"
+alias passw="PASSWORD_STORE_DIR=$HOME/.password-store/ie pass"
 
 # go to new directory
 function md() { mkdir -p "$1" && cd "$1"; }

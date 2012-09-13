@@ -31,7 +31,8 @@ set -o vi
 bind -m vi-insert "\C-l":clear-screen
 
 eval `keychain -q --eval --nocolor --agents ssh $HOME/.ssh/id_rsa`
-eval `keychain -q --eval --nocolor --agents ssh $HOME/.ssh/id_eskpnet`
+
+source /etc/bash_completion.d/password-store
 
 #colored man pages
 export LESS_TERMCAP_mb=$(printf '\e[01;31m') # enter blinking mode - red
