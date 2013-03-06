@@ -29,9 +29,11 @@ alias log="$HOME/git/eskp.net/log.py $HOME/git/eskp.net/public/log.eskp.net/logs
 alias mirror="xrandr --auto --output VGA1 --mode 1360x768 --output LVDS1 --mode 1280x800"
 alias vgaoff="xrandr --output LVDS1 --mode 1280x800 --output VGA1 --off"
 alias rightof="xrandr --noprimary --output VGA1 --mode 1360x768 --right-of LVDS1"
-alias leftof="xrandr --noprimary --output VGA1 --mode 1360x768 --left-of LVDS1"
+#alias leftof="xrandr --noprimary --output VGA1 --mode 1360x768 --left-of LVDS1"
+alias leftof="xrandr --noprimary --output VGA1 --mode 1680x1050 --left-of LVDS1"
 
-alias passw="PASSWORD_STORE_DIR=$HOME/.password-store/ie pass"
+alias mpass="PASSWORD_STORE_DIR=$HOME/.password-store/mig5 PASSWORD_STORE_KEY=mig5.net PASSWORD_STORE_GIT=$HOME/.password-store/mig5 pass"
+complete -o filenames -o nospace -F _pass mpass
 
 # go to new directory
 function md() { mkdir -p "$1" && cd "$1"; }

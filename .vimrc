@@ -12,6 +12,7 @@ call vundle#rc()
 Bundle 'msanders/snipmate.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'godlygeek/tabular'
+Bundle 'saltstack/salt-vim'
 "vim-scripts repo
 Bundle 'pep8'
 "Bundle 'Puppet-Syntax-Highlighting'
