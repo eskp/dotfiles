@@ -32,8 +32,7 @@ alias rightof="xrandr --noprimary --output VGA1 --mode 1360x768 --right-of LVDS1
 #alias leftof="xrandr --noprimary --output VGA1 --mode 1360x768 --left-of LVDS1"
 alias leftof="xrandr --noprimary --output VGA1 --mode 1680x1050 --left-of LVDS1"
 
-alias mpass="PASSWORD_STORE_DIR=$HOME/.password-store/mig5 PASSWORD_STORE_KEY=mig5.net PASSWORD_STORE_GIT=$HOME/.password-store/mig5 pass"
-complete -o filenames -o nospace -F _pass mpass
+alias psc='ps xawf -eo pid,user,cgroup,args'
 
 # go to new directory
 function md() { mkdir -p "$1" && cd "$1"; }
