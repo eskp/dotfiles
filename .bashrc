@@ -15,8 +15,6 @@ export HISTCONTROL=ignoredups:ignorespace
 export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='1;32'
 
-export TODOTXT_DEFAULT_ACTION=ls
-
 #share history between terminal sessions
 #append to the history file, don't overwrite it
 shopt -s histappend
@@ -30,8 +28,7 @@ set -o vi
 # ^l clears screen
 bind -m vi-insert "\C-l":clear-screen
 
-eval `keychain -q --eval --nocolor --agents ssh $HOME/.ssh/id_rsa`
-eval `keychain -q --eval --nocolor --agents ssh $HOME/.ssh/id_eskp`
+eval `keychain --quiet --eval --nocolor --agents ssh id_rsa id_eskp`
 
 source /etc/bash_completion.d/password-store
 
