@@ -28,7 +28,7 @@ set -o vi
 # ^l clears screen
 bind -m vi-insert "\C-l":clear-screen
 
-eval `keychain --quiet --eval --nocolor --agents ssh id_rsa id_eskp`
+eval `keychain --quiet --eval --nocolor --agents ssh id_rsa`
 
 source /etc/bash_completion.d/password-store
 
