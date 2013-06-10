@@ -13,6 +13,7 @@ Bundle 'msanders/snipmate.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'godlygeek/tabular'
 Bundle 'saltstack/salt-vim'
+Bundle 'puppetlabs/puppet-syntax-vim'
 "vim-scripts repo
 Bundle 'pep8'
 "Bundle 'Puppet-Syntax-Highlighting'
