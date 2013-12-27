@@ -10,3 +10,4 @@ To install, from `$HOME` run:
     git fetch --all
     git reset --hard origin/master
     git submodule update --init
+    git config status.showuntrackedfiles no

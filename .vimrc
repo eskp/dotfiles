@@ -1,8 +1,5 @@
-set background=dark
-set t_Co=256
-colorscheme kellys
-syntax on
-
+filetype on
+filetype plugin indent on       "required for vundle
 set nocompatible
 set rtp+=~/.vim/vundle/
 call vundle#rc()
@@ -14,6 +11,8 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'godlygeek/tabular'
 Bundle 'saltstack/salt-vim'
 Bundle 'puppetlabs/puppet-syntax-vim'
+Bundle 'sjl/gundo.vim'
+Bundle 'scrooloose/syntastic'
 "vim-scripts repo
 Bundle 'pep8'
 "Bundle 'Puppet-Syntax-Highlighting'
@@ -24,16 +23,21 @@ au BufRead,BufNewFile *.pp
 au BufRead,BufNewFile *_spec.rb
     \ nmap <F8> :!rspec --color %<CR>
 
-filetype off                    "required for vundle
-filetype plugin indent on       "required for vundle
-
+syntax on
+set background=dark
+set t_Co=256
+set tabstop=4 " tab inserts 4 spaces
+set shiftwidth=4 " indent level is 2 spaces wide
+set softtabstop=4 " BS over an autoindent deletes both spaces
 set expandtab
 set smarttab
-set shiftwidth=4
-set tabstop=4
 set autoindent
-"display line number and define a mapping for toggling
-set number
+set smartindent
+set shiftround
+set number " display line numbers
+set textwidth=80 " lines are wrapped after 80 columns
+set wrap
+" mapping for toggling line numbers
 nmap <leader>n :set invnumber<CR>
 set showmode
 set ignorecase
@@ -41,13 +45,13 @@ set smartcase
 "set nohlsearch
 set nobackup
 set noswapfile
+set cursorline " have a line indicate the cursor location
+set ruler
+set scrolloff=3 " keep 3 context lines above and below the cursor
 
 "code folding
 set foldmethod=indent
 set foldlevel=99
-"formatting
-"set textwidth=80
-set nowrap
 "typing behavior
 set backspace=indent,eol,start
 set showmatch
@@ -80,3 +84,9 @@ endfunction
 
 "Toggle syntax setting
 map <F6> :execute ToggleSyntax()<CR>
+
+" sudo write
+cmap w!! w !sudo tee % >/dev/null
+
+" load Gundo
+map <leader>g :GundoToggle<CR>
