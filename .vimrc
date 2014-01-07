@@ -45,7 +45,7 @@ set smartcase
 "set nohlsearch
 set nobackup
 set noswapfile
-set cursorline " have a line indicate the cursor location
+"set cursorline " have a line indicate the cursor location
 set ruler
 set scrolloff=3 " keep 3 context lines above and below the cursor
 
