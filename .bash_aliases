@@ -1,7 +1,7 @@
 #alias for editing aliases
 alias va='vim ~/.bash_aliases; source ~/.bash_aliases && echo ":: aliases sourced"'
 
-alias ls='ls --color=auto --group-directories-first'
+#alias ls='ls --color=auto --group-directories-first'
 alias ll='ls -lh' 
 alias la='ll -a'
 alias cr='rsync -rPh'

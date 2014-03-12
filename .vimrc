@@ -13,6 +13,7 @@ Bundle 'saltstack/salt-vim'
 Bundle 'puppetlabs/puppet-syntax-vim'
 Bundle 'sjl/gundo.vim'
 Bundle 'scrooloose/syntastic'
+Bundle 'altercation/vim-colors-solarized'
 "vim-scripts repo
 Bundle 'pep8'
 "Bundle 'Puppet-Syntax-Highlighting'
@@ -25,10 +26,11 @@ au BufRead,BufNewFile *_spec.rb
 
 syntax on
 set background=dark
+colorscheme solarized
 set t_Co=256
-set tabstop=4 " tab inserts 4 spaces
-set shiftwidth=4 " indent level is 2 spaces wide
-set softtabstop=4 " BS over an autoindent deletes both spaces
+set tabstop=2 " tab inserts 2 spaces
+set shiftwidth=2 " indent level is 2 spaces wide
+set softtabstop=2 " BS over an autoindent deletes both spaces
 set expandtab
 set smarttab
 set autoindent
