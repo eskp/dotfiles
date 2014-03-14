@@ -1,11 +1,11 @@
 filetype on
-filetype plugin indent on       "required for vundle
+filetype plugin indent on " required for vundle
 set nocompatible
 set rtp+=~/.vim/vundle/
 call vundle#rc()
 
-"github bundles:
-"Bundle 'sontek/minibufexpl.vim'
+" github bundles:
+" Bundle 'sontek/minibufexpl.vim'
 Bundle 'msanders/snipmate.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'godlygeek/tabular'
@@ -13,11 +13,11 @@ Bundle 'saltstack/salt-vim'
 Bundle 'puppetlabs/puppet-syntax-vim'
 Bundle 'sjl/gundo.vim'
 Bundle 'scrooloose/syntastic'
-"vim-scripts repo
+" vim-scripts repo
 Bundle 'pep8'
-"Bundle 'Puppet-Syntax-Highlighting'
+" Bundle 'Puppet-Syntax-Highlighting'
 
-"set up puppet manifest and spec options
+" set up puppet manifest and spec options
 au BufRead,BufNewFile *.pp
     \ set filetype=puppet
 au BufRead,BufNewFile *_spec.rb
@@ -32,7 +32,7 @@ set softtabstop=4 " BS over an autoindent deletes both spaces
 set expandtab
 set smarttab
 set autoindent
-set smartindent
+set cindent
 set shiftround
 set number " display line numbers
 set textwidth=80 " lines are wrapped after 80 columns
@@ -42,36 +42,37 @@ nmap <leader>n :set invnumber<CR>
 set showmode
 set ignorecase
 set smartcase
-"set nohlsearch
+" set nohlsearch
 set nobackup
 set noswapfile
-"set cursorline " have a line indicate the cursor location
+" set cursorline " have a line indicate the cursor location
 set ruler
 set scrolloff=3 " keep 3 context lines above and below the cursor
 
-"code folding
+" code folding
 set foldmethod=indent
 set foldlevel=99
-"typing behavior
+" typing behavior
 set backspace=indent,eol,start
 set showmatch
-"show invisibles
-"toggle between showing and hiding invisible chars
+" show invisibles
+" toggle between showing and hiding invisible chars
 nmap <leader>l :set list!<CR>
-"customize the symbols used for invisible chars
-"set listchars=tab:▸\ ,trail:_,eol:¬,extends:>,precedes:<
-"status line
+" customize the symbols used for invisible chars
+set listchars=tab:▸\ ,trail:_,eol:¬,extends:>,precedes:<
+" set list
+" status line
 set statusline=%F%m%r%h%w%=\ [format=%{&ff}]\ [type=%Y]\ [ascii=\%03.3b]\ [hex=\%02.2B]\ [pos=%04l,%04v]\ [%p%%]\ [len=%L]
 set laststatus=2
 
 " turn off auto adding comments on next line
-"set fo=tcq
-"set modeline
+" set fo=tcq
+" set modeline
 
 hi Search cterm=none ctermfg=black ctermbg=white
 hi StatusLine cterm=none ctermfg=grey ctermbg=none
 
-"style guide checker
+" style guide checker
 let g:pep8_map='<leader>8'
 
 function! ToggleSyntax()
@@ -82,7 +83,7 @@ function! ToggleSyntax()
    endif
 endfunction
 
-"Toggle syntax setting
+" Toggle syntax setting
 map <F6> :execute ToggleSyntax()<CR>
 
 " sudo write
