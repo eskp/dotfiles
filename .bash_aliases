@@ -19,10 +19,11 @@ alias topmem="ps axo pid,pcpu,pmem,comm --sort=-rss | head -20"
 #top 10 CPU consuming process
 alias topcpu="ps axo pid,pcpu,pmem,comm --sort=-pcpu| head -20"
 
-alias S="pac"
-alias I="sudo pacman -Sy"
-alias U="sudo pacman -Syu"
-alias Q="sudo pacman -Qi"
+alias S="apt-cache search"
+alias D="sudo apt-get update"
+alias I="D && sudo apt-get install"
+alias U="D && sudo apt-get upgrade"
+alias G="D && sudo apt-get dist-upgrade"
 
 alias log="$HOME/git/eskp.net/log.py $HOME/git/eskp.net/public/log.eskp.net/logs"
 
@@ -71,3 +72,7 @@ function pac() {
 }
 # go up directories
 function up() { local x='';for i in $(seq ${1:-1});do x="$x../"; done;cd $x; }
+
+function clear_openstack() {
+    unset $(env | grep EC2 | cut -d= -f1)
+}
