@@ -38,8 +38,6 @@ alias gd='git diff'
 alias go='git checkout '
 alias gk='gitk --all&'
 alias gx='gitx --all'
-alias got='git '
-alias get='git '
 
 # go to new directory
 function md() { mkdir -p "$1" && cd "$1"; }
