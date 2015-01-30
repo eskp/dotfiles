@@ -1,4 +1,3 @@
-filetype on
 filetype plugin indent on       "required for vundle
 set nocompatible
 set rtp+=~/.vim/vundle/
@@ -6,17 +5,36 @@ call vundle#rc()
 
 "github bundles:
 "Bundle 'sontek/minibufexpl.vim'
+
+"snippets on tab expansion
 Bundle 'msanders/snipmate.vim'
+
+"Git wrapper
 Bundle 'tpope/vim-fugitive'
+
+"automatic => alignment etc.
 Bundle 'godlygeek/tabular'
+
+"Salt formatting
 Bundle 'saltstack/salt-vim'
-Bundle 'puppetlabs/puppet-syntax-vim'
+
+"Visualize vim undo tree
 Bundle 'sjl/gundo.vim'
+
+"syntax feedback while editting files
 Bundle 'scrooloose/syntastic'
+
 Bundle 'altercation/vim-colors-solarized'
+
 "vim-scripts repo
 Bundle 'pep8'
-"Bundle 'Puppet-Syntax-Highlighting'
+
+"Puppet formatting
+Bundle 'rodjek/vim-puppet'
+"Bundle 'puppetlabs/puppet-syntax-vim'
+
+"Ansible's YAML syntax highlighting and indentation
+Bundle 'chase/vim-ansible-yaml'
 
 "set up puppet manifest and spec options
 au BufRead,BufNewFile *.pp
@@ -26,7 +44,7 @@ au BufRead,BufNewFile *_spec.rb
 
 syntax on
 set background=dark
-colorscheme solarized
+"colorscheme solarized
 set t_Co=256
 set tabstop=2 " tab inserts 2 spaces
 set shiftwidth=2 " indent level is 2 spaces wide
@@ -37,7 +55,7 @@ set autoindent
 set smartindent
 set shiftround
 set number " display line numbers
-set textwidth=80 " lines are wrapped after 80 columns
+" set textwidth=80 " lines are wrapped after 80 columns
 set wrap
 " mapping for toggling line numbers
 nmap <leader>n :set invnumber<CR>

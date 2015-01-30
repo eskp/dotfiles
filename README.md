@@ -1,7 +1,7 @@
 dotfiles
 ========
 
-A collection of configuration files for various programs that I use at command line.
+A collection of configuration files for various programs that I use at the command line.
 
 To install, from `$HOME` run:
 

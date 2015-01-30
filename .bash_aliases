@@ -19,11 +19,6 @@ alias topmem="ps axo pid,pcpu,pmem,comm --sort=-rss | head -20"
 #top 10 CPU consuming process
 alias topcpu="ps axo pid,pcpu,pmem,comm --sort=-pcpu| head -20"
 
-alias S="pac"
-alias I="sudo pacman -Sy"
-alias U="sudo pacman -Syu"
-alias Q="sudo pacman -Qi"
-
 alias log="$HOME/git/eskp.net/log.py $HOME/git/eskp.net/public/log.eskp.net/logs"
 
 alias mirror="xrandr --auto --output VGA1 --mode 1360x768 --output LVDS1 --mode 1280x800"
@@ -33,6 +28,18 @@ alias rightof="xrandr --noprimary --output VGA1 --mode 1360x768 --right-of LVDS1
 alias leftof="xrandr --noprimary --output VGA1 --mode 1680x1050 --left-of LVDS1"
 
 alias psc='ps xawf -eo pid,user,cgroup,args'
+
+alias gs='git status '
+alias ga='git add '
+alias gb='git branch '
+alias gc='git commit'
+alias gp='git push'
+alias gd='git diff'
+alias go='git checkout '
+alias gk='gitk --all&'
+alias gx='gitx --all'
+alias got='git '
+alias get='git '
 
 # go to new directory
 function md() { mkdir -p "$1" && cd "$1"; }
