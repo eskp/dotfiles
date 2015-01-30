@@ -78,3 +78,7 @@ function pac() {
 }
 # go up directories
 function up() { local x='';for i in $(seq ${1:-1});do x="$x../"; done;cd $x; }
+
+function clear_openstack() {
+    unset $(env | grep EC2 | cut -d= -f1)
+}
