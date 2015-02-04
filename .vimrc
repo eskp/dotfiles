@@ -5,27 +5,24 @@ set rtp+=~/.vim/vundle/
 call vundle#rc()
 
 " github bundles:
-" Bundle 'sontek/minibufexpl.vim'
+"snippets on tab expansion
 Bundle 'msanders/snipmate.vim'
-
 "Git wrapper
 Bundle 'tpope/vim-fugitive'
-
 "automatic => alignment etc.
 Bundle 'godlygeek/tabular'
-
 "Salt formatting
 Bundle 'saltstack/salt-vim'
-
 "Visualize vim undo tree
 Bundle 'sjl/gundo.vim'
-
 "syntax feedback while editting files
 Bundle 'scrooloose/syntastic'
-" vim-scripts repo
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'pep8'
-" Bundle 'Puppet-Syntax-Highlighting'
+"Puppet formatting
+Bundle 'rodjek/vim-puppet'
+"Ansible's YAML syntax highlighting and indentation
+Bundle 'chase/vim-ansible-yaml'
 
 " set up puppet manifest and spec options
 au BufRead,BufNewFile *.pp
