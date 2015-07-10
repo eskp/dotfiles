@@ -23,6 +23,8 @@ Bundle 'pep8'
 Bundle 'rodjek/vim-puppet'
 "Ansible's YAML syntax highlighting and indentation
 Bundle 'chase/vim-ansible-yaml'
+"Explore filesystem to open files and directories
+Bundle 'scrooloose/nerdtree'
 
 " set up puppet manifest and spec options
 au BufRead,BufNewFile *.pp
@@ -39,8 +41,8 @@ set shiftwidth=2 " indent level is 2 spaces wide
 set softtabstop=2 " BS over an autoindent deletes both spaces
 set expandtab
 set smarttab
-set autoindent
-set cindent
+"set autoindent
+"set cindent
 set shiftround
 set number " display line numbers
 " set textwidth=80 " lines are wrapped after 80 columns
@@ -99,3 +101,11 @@ cmap w!! w !sudo tee % >/dev/null
 
 " load Gundo
 map <leader>g :GundoToggle<CR>
+
+" Toggle NerdTree
+map <leader>b :NERDTreeToggle<CR>
+
+" Move between window splits
+set wmh=0
+map <C-J> <C-W>j<C-W>_
+map <C-K> <C-W>k<C-W>_

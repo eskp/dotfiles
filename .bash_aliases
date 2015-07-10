@@ -36,6 +36,7 @@ alias gc='git commit'
 alias gp='git push'
 alias gd='git diff'
 alias go='git checkout '
+alias gr='git remote'
 alias gk='gitk --all&'
 alias gx='gitx --all'
 
