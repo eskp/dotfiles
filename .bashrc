@@ -18,6 +18,9 @@ export HISTFILESIZE=1000000000
 export HISTCONTROL=ignoredups:ignorespace
 export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='1;32'
+export CLICOLOR=1
+export LS_COLORS='di=1:ow=0;1:'
+export LSCOLORS=HxfxcxdxbxexexabagacHx
 
 #share history between terminal sessions
 #append to the history file, don't overwrite it

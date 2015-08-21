@@ -1,7 +1,7 @@
 #alias for editing aliases
 alias va='vim ~/.bash_aliases; source ~/.bash_aliases && echo ":: aliases sourced"'
 
-#alias ls='ls --color=auto --group-directories-first'
+alias ls='gls --color=auto --group-directories-first' #brew install coreutils
 alias ll='ls -lh' 
 alias la='ll -a'
 alias cr='rsync -rPh'
@@ -37,6 +37,7 @@ alias gp='git push'
 alias gd='git diff'
 alias go='git checkout '
 alias gr='git remote'
+alias gh="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
 alias gk='gitk --all&'
 alias gx='gitx --all'
 
