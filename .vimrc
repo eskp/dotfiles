@@ -1,30 +1,31 @@
-filetype on
-filetype plugin indent on " required for vundle
 set nocompatible
-set rtp+=~/.vim/vundle/
-call vundle#rc()
-
-" github bundles:
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+"let Vundle manage Vundle
+Plugin 'VundleVim/Vundle.vim'
 "snippets on tab expansion
-Bundle 'msanders/snipmate.vim'
+Plugin 'msanders/snipmate.vim'
 "Git wrapper
-Bundle 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive'
 "automatic => alignment etc.
-Bundle 'godlygeek/tabular'
+Plugin 'godlygeek/tabular'
 "Salt formatting
-Bundle 'saltstack/salt-vim'
+Plugin 'saltstack/salt-vim'
 "Visualize vim undo tree
-Bundle 'sjl/gundo.vim'
+Plugin 'sjl/gundo.vim'
 "syntax feedback while editting files
-Bundle 'scrooloose/syntastic'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'pep8'
+Plugin 'scrooloose/syntastic'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'pep8'
 "Puppet formatting
-Bundle 'rodjek/vim-puppet'
+Plugin 'rodjek/vim-puppet'
 "Ansible's YAML syntax highlighting and indentation
-Bundle 'chase/vim-ansible-yaml'
+Plugin 'chase/vim-ansible-yaml'
 "Explore filesystem to open files and directories
-Bundle 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree'
+call vundle#end()
+filetype plugin indent on " required for vundle
 
 " set up puppet manifest and spec options
 au BufRead,BufNewFile *.pp
@@ -76,8 +77,8 @@ set statusline=%F%m%r%h%w%=\ [format=%{&ff}]\ [type=%Y]\ [ascii=\%03.3b]\ [hex=\
 set laststatus=2
 
 " turn off auto adding comments on next line
-" set fo=tcq
-" set modeline
+set fo=cqt
+set modeline
 
 hi Search cterm=none ctermfg=black ctermbg=white
 hi StatusLine cterm=none ctermfg=grey ctermbg=none
