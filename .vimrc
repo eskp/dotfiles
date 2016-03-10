@@ -24,6 +24,8 @@ Plugin 'rodjek/vim-puppet'
 Plugin 'chase/vim-ansible-yaml'
 "Explore filesystem to open files and directories
 Plugin 'scrooloose/nerdtree'
+"Paste without indent
+Plugin 'ConradIrwin/vim-bracketed-paste'
 call vundle#end()
 filetype plugin indent on " required for vundle
 
