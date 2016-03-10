@@ -37,9 +37,23 @@ alias gp='git push'
 alias gd='git diff'
 alias go='git checkout '
 alias gr='git remote'
-alias gh="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 alias gk='gitk --all&'
 alias gx='gitx --all'
+
+# Docker aliases
+alias di='docker images'
+alias dps='docker ps -a'
+
+# useful Docker functions
+drun()  { docker run -i -t --privileged $@ ;}
+dexec() { docker exec -i -t $@ /bin/bash ;}
+dlogs() { docker logs --tail=all -f $@ ;}
+dport() { docker port $@ ;}
+dvol()  { docker inspect --format '{{ .Volumes }}' $@ ;}
+dip()   { docker inspect --format '{{ .NetworkSettings.IPAddress }}' $@ ;}
+drmc()  { docker rm `docker ps -qa --filter 'status=exited'` ;}
+drmi()  { docker images -aq -f dangling=true | xargs docker rmi ;}
 
 # go to new directory
 function md() { mkdir -p "$1" && cd "$1"; }
