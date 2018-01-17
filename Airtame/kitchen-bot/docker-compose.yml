@@ -1,0 +1,3 @@
+kitchen-bot:
+  container_name: kitchen-bot
+  build: .
