@@ -26,6 +26,8 @@ Plugin 'chase/vim-ansible-yaml'
 Plugin 'scrooloose/nerdtree'
 "Paste without indent
 Plugin 'ConradIrwin/vim-bracketed-paste'
+"Golang plugin
+Plugin 'fatih/vim-go'
 call vundle#end()
 filetype plugin indent on " required for vundle
 
@@ -110,5 +112,11 @@ map <leader>b :NERDTreeToggle<CR>
 
 " Move between window splits
 set wmh=0
-map <C-J> <C-W>j<C-W>_
-map <C-K> <C-W>k<C-W>_
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+" Split opening
+set splitbelow
+set splitright

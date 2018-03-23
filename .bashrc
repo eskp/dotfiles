@@ -11,7 +11,7 @@ parse_git_branch() {
 
 export PATH=$PATH:$HOME/.gem/ruby/1.9.1/bin:$HOME/.scripts:/usr/local/bin
 export CDPATH=.:~:/mnt:/etc:/var/log:~/git:~/git/sysadmin
-export -n PS1="\n\u@\h:\[\e[0;32m\]\w\[\e[m\]\$(parse_git_branch)\[\033[00m\] $ "
+export -n PS1="\n\u@\h:\[\e[0;32m\]\w\[\e[m\]\$(parse_git_branch)\[\033[00m\]\n$ "
 export EDITOR=/usr/bin/vim
 export HISTSIZE=1000000
 export HISTFILESIZE=1000000000

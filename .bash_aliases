@@ -6,7 +6,7 @@ alias ll='ls -lh'
 alias la='ll -a'
 alias cr='rsync -rPh'
 #vim's less macro
-alias less='/usr/share/vim/vim73/macros/less.sh'
+#alias less='/usr/share/vim/vim73/macros/less.sh'
 
 alias words="shuf -n3 /usr/share/dict/cracklib-small | tr '\n' ' '"
 
@@ -35,7 +35,7 @@ alias gb='git branch '
 alias gc='git commit'
 alias gp='git push'
 alias gd='git diff'
-alias go='git checkout '
+#alias go='git checkout '
 alias gr='git remote'
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 alias gk='gitk --all&'
@@ -50,10 +50,11 @@ drun()  { docker run -i -t --privileged $@ ;}
 dexec() { docker exec -i -t $@ /bin/bash ;}
 dlogs() { docker logs --tail=all -f $@ ;}
 dport() { docker port $@ ;}
-dvol()  { docker inspect --format '{{ .Volumes }}' $@ ;}
+dvol()  { docker inspect --format '{{ .Mounts }}' $@ ;}
 dip()   { docker inspect --format '{{ .NetworkSettings.IPAddress }}' $@ ;}
 drmc()  { docker rm `docker ps -qa --filter 'status=exited'` ;}
 drmi()  { docker images -aq -f dangling=true | xargs docker rmi ;}
+drmv()  { docker volume ls -q -f dangling=true | xargs docker volume rm ;}
 
 # go to new directory
 function md() { mkdir -p "$1" && cd "$1"; }
