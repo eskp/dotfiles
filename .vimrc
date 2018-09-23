@@ -10,14 +10,11 @@ Plugin 'msanders/snipmate.vim'
 Plugin 'tpope/vim-fugitive'
 "automatic => alignment etc.
 Plugin 'godlygeek/tabular'
-"Salt formatting
-Plugin 'saltstack/salt-vim'
 "Visualize vim undo tree
 Plugin 'sjl/gundo.vim'
-"syntax feedback while editting files
-Plugin 'scrooloose/syntastic'
+"Syntax checking feedback while editting files
+Plugin 'vim-syntastic/syntastic'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'pep8'
 "Puppet formatting
 Plugin 'rodjek/vim-puppet'
 "Ansible's YAML syntax highlighting and indentation
@@ -28,6 +25,9 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'ConradIrwin/vim-bracketed-paste'
 "Golang plugin
 Plugin 'fatih/vim-go'
+"Solidity syntax highlighting
+Plugin 'tomlion/vim-solidity'
+
 call vundle#end()
 filetype plugin indent on " required for vundle
 
