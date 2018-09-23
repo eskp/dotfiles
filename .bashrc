@@ -9,7 +9,7 @@ parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-export PATH=$PATH:$HOME/.gem/ruby/1.9.1/bin:$HOME/.scripts:/usr/local/bin
+export PATH=$PATH:$HOME/go/bin:$HOME/Library/Python/2.7/bin:$HOME/.gem/ruby/1.9.1/bin:$HOME/.scripts:/usr/local/bin
 export CDPATH=.:~:/mnt:/etc:/var/log:~/git:~/git/sysadmin
 export -n PS1="\n\u@\h:\[\e[0;32m\]\w\[\e[m\]\$(parse_git_branch)\[\033[00m\]\n$ "
 export EDITOR=/usr/bin/vim
